@@ -1,3 +1,8 @@
+print ('\t================================================================')
+print ('\t\tProgram Menghitung Harga Akun Genshin Impact')
+print ('\t\tBerdasarkan Charakter dan Weapon Player')
+print ('\t================================================================\n')
+
 x_jumlahChar = input ('Masukan Jumlah Charakter B5 Anda (Limited B5) = ')
 y_jumlahWep = input ('Masukan Jumlah Weapon B5 Anda (Limited B5) = ')
 
@@ -57,12 +62,14 @@ if jumlahWep == 27 :
     value_Wp2p = 0
     value_Wsultan = 1
 
+print ('\t================================================================\n')
 print ('Hasil Drajat Keanggotaaan Charakter')
 print ('Nilai Free Player = ', value_f2p)
 print ('Nilai Top-Up Player = ', value_p2p)
 print ('Nilai Player Sultan = ', value_sultan)
 print ('')
 
+print ('\t================================================================\n')
 print ('Hasil Drajat Keanggotaaan Weapon')
 print ('Nilai Free Player = ', value_Wf2p)
 print ('Nilai Top-Up Player = ', value_Wp2p)
@@ -101,6 +108,7 @@ harga3 (value_sultan, value_Wf2p)
 harga3 (value_sultan, value_Wp2p)
 harga3 (value_sultan, value_Wsultan)
 
+print ('\t================================================================\n')
 print ('Hasil Keputusan Harga Adalah : ', harga)
 
 # Contructing the Output
@@ -114,5 +122,6 @@ for n in range (0, len(harga)):
     pembagian_b = pembagian_b + pembagian
     print (perkalian_b, pembagian_b)
 
+print ('\t================================================================\n')
 mean = (perkalian_b / pembagian_b)
 print ('Maka Perkiraan Harga Akun Adalah = ', int(mean), 'Rupiah')
