@@ -70,3 +70,49 @@ print ('Nilai Player Sultan = ', value_Wsultan)
 print ('')
 
 # Sistem Inferensi
+harga = []
+harga.clear
+
+def harga1 (value_jumlahChar, value_jumlahWep) :
+    if value_jumlahChar != 0 :
+        if value_jumlahWep != 0 :
+            hasil_harga = min (value_jumlahChar, value_jumlahWep)
+            harga.append ([hasil_harga, 1080])
+
+def harga2 (value_jumlahChar, value_jumlahWep) :
+    if value_jumlahChar != 0 :
+        if value_jumlahWep != 0 :
+            hasil_harga = min (value_jumlahChar, value_jumlahWep)
+            harga.append ([hasil_harga, 2160])
+
+def harga3 (value_jumlahChar, value_jumlahWep) :
+    if value_jumlahChar != 0 :
+        if value_jumlahWep != 0 :
+            hasil_harga = min (value_jumlahChar, value_jumlahWep)
+            harga.append ([hasil_harga, 3240])
+
+harga1 (value_f2p, value_Wf2p)
+harga1 (value_f2p, value_Wp2p)
+harga1 (value_f2p, value_Wsultan)
+harga2 (value_p2p, value_Wf2p)
+harga2 (value_p2p, value_Wp2p)
+harga2 (value_p2p, value_Wsultan)
+harga3 (value_sultan, value_Wf2p)
+harga3 (value_sultan, value_Wp2p)
+harga3 (value_sultan, value_Wsultan)
+
+print ('Hasil Keputusan Harga Adalah : ', harga)
+
+# Contructing the Output
+perkalian_b = 0
+pembagian_b = 0
+
+for n in range (0, len(harga)):
+    perkalian = harga[n][0] * harga[n][1]
+    pembagian = harga[n][0]
+    perkalian_b = perkalian_b + perkalian
+    pembagian_b = pembagian_b + pembagian
+    print (perkalian_b, pembagian_b)
+
+mean = (perkalian_b / pembagian_b)
+print ('Maka Perkiraan Harga Akun Adalah = ', int(mean), 'Rupiah')
