@@ -6,4 +6,4 @@ Anggota Kelompok :
 2. Abdul Azis Naufal Farizqi (21081010210)
 3. Muhamad Rizal Efendi (21081010035)
 
-Final Project kami ini tentang program perkiraan harga akun game Genshin Impact berdasarkan jumlah character limited dan weapon limited yang dimiliki.
+
